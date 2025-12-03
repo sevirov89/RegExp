@@ -7,7 +7,7 @@ with open("phonebook_raw.csv", encoding="utf-8") as f:
 
 # Задача 1
 for row in contacts_list[1:]:
-    full_name = " ".join(row[:3]).strip()
+    full_name = " ".join(row[:2]).strip()
     parts = full_name.split(" ")
     if len(parts) >= 1:
         row[0] = parts[0]
